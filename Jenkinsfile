@@ -69,7 +69,7 @@ pipeline {
         stage('Terraform apply') {
             steps {
                 echo 'Terraform apply...'
-                sh 'terraform apply --auto-approve'
+                sh 'terraform apply'
             } 
         }
 
@@ -84,7 +84,7 @@ pipeline {
         stage('Terraform Destroy') {
             steps {
                 echo 'Terraform Destroy...'
-                sh 'terraform destroy --auto-approve'
+                sh 'terraform destroy'
                 }
             }
     }
