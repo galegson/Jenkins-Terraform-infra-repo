@@ -14,7 +14,7 @@ resource "aws_instance" "airbnb-prod-server" {
   ami           =var.ami_id
   instance_type = var.instance_type
 
-#  tags = {
- #   Name = "airbnb-prod-server"
-  #}
+  tags = {
+    Name = "airbnb-prod-server"
+  }
 }
