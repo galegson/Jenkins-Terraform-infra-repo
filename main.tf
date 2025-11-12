@@ -8,7 +8,6 @@ resource "aws_instance" "airbnb-web-server" {
     Name = "airbnb-web-server"
   }
 }
-
 #Creating prod server for airbnb
 resource "aws_instance" "airbnb-prod-server" {
   ami           =var.ami_id
