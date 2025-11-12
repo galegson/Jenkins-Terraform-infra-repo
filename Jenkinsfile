@@ -53,7 +53,7 @@ pipeline {
         stage('Terraform plan') {
             steps {
                 echo 'Terraform plan for the dry run...'
-                sh 'terraform plan --auto-approve'
+                sh '"terraform plan --auto-approve"'
                
             }
         }
